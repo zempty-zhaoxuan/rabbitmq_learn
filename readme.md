@@ -1,9 +1,3 @@
----
-title: rabbitmq 学习笔记
-date: 2020-04-16 23:33
----
-
-
 ## rabbitmq 的安装和基本认识
 
 ```bash
@@ -36,7 +30,7 @@ docker exec -it rabbitmq rabbitmq-plugins enable rabbitmq_management
 6. Arguments: 扩展参数，用于扩展AMQP协议自制定化使用
 
 ## 交换机类型详解：
-1. Direct Exchange : 发送到 Direct Exchange 的消息被转发到 RouteKey  中指定的 Queue ，**详情见代码**[代码案例实操]
+1. Direct Exchange : 发送到 Direct Exchange 的消息被转发到 RouteKey  中指定的 Queue ，**详情见代码**
 2. Topic Exchange : 消息被转发到所有关心RouteKey 指定 Topic 的 queue 上，Exchange 将 RouteKey 和某 Topic 进行模糊匹配：![](https://raw.githubusercontent.com/kickcodeman/pics/master/20200319172254.png)
 ![](https://raw.githubusercontent.com/kickcodeman/pics/master/20200319172945.png)
 **详情可见代码展示**
